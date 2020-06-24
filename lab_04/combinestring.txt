@@ -1,0 +1,1 @@
+	#include <iostream>using namespace std;string function (string str, integer int) {string output;for(int index = 0; 0 less than int; i++) {output plus/equals str; }return output;}int main (){string str;int int = 0;output Òenter stringÓ;input a string;output enter a number of timesÓinput int;output the resulting string is #.}

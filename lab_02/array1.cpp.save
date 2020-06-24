@@ -1,0 +1,23 @@
+#include <iostream> 
+using namespace std;
+int main() {
+int x,y;
+cout << "Enter the size of the array: ";
+cin >> x; 
+	if (x>0) {
+		int arr[x];
+		cout << "Enter the numbers in the array, seperated by a space, and press enter: ";
+		cin >> y;
+		if (y<0) {
+			cout << "You entered an incorrect value" << "!\n";
+		} else if (y>0) {
+			for(int i=1; i<=x; i++) {
+		
+			}
+		}
+	} else if (x < 0) {
+		cout << "ERROR: you entered an incorrect value fpr the array size!"<<endl;
+	}
+return 0; }
+
+
