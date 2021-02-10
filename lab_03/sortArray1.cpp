@@ -41,12 +41,12 @@ int main() {
 				}
 			}
 	
-			// 	std::cout << "The algorithm selected the minimum for the transverse of the array.\n" << std::endl;
+			std::cout << "The algorithm selected the minimum for the transverse of the array.\n" << std::endl;
 				
 			// 	int v=1;
             // 	if (i == 0) {
 			// 		std::cout << "We ran into the best case scenerio!" << std::endl;
-           	// 	} else if (i == x -1) {
+           	// 	} else if (i == sizeofarr-1) {
 			// 		std::cout << "We ran into the worst case scenario!" << std::endl;
 			// 	}
 	
