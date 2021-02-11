@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-//note: changing variable "descend" to "temporary" assuming it is a temporary storage variable.
-
 int main(){
 
   int size;
@@ -26,7 +24,7 @@ int main(){
             temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
-            swap++;
+            swap++; //not counting corrctly
         }
       }
     }
