@@ -1,9 +1,9 @@
 #include <iostream>
+#include <string>
 #include <fstream>
 using namespace std;
 
 int checkArraySort(string* array, int arr_size) {
-
 
     //Todo: check if increasing
     for (int i = 1; i < arr_size; i++) {

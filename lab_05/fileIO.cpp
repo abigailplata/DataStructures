@@ -1,4 +1,5 @@
 #include <fstream>
+#include <string>
 using namespace std;
 
 int main()
@@ -29,7 +30,7 @@ int main()
 
 
     ofstream file_out;
-    file_out.open("words_out.txt");
+    file_out.open("output.txt");
     for (int i = 0; i < count; i++) {
        file_out << arr[i] << endl;
     }
