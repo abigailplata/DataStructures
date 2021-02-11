@@ -3,37 +3,42 @@ using namespace std;
 
 int main(){
 
-  int num;
-  int descend = 0;
+  int size;
+  int swap, temp;
   int arr[10];
-    cout << "Enter the size of the array: ";
-        cin >>num;
-  if (num <= 0){
+  cout << "Enter the size of the array: ";
+  cin >> size;
+  if (size <= 0){
     cout << "ERROR: you entered an incorrect value for the array size!";
-        return 0;
+    return 0;
   } else {
     cout << "Enter the numbers in the array, separated by a space, and press enter: ";
-        for (int i = 0; i < num; i++){
-            cin >> arr[i];
-    }
-    cout << "This is the sorted array in descending order: ";
-        for (int i = num; i >= 1; --i){
-            for (int j = 1; j < i; j++){
-        if (arr[j] > arr[descend]){
-          descend = j;
+      for (int i = 0; i < size; i++){
+        cin >> arr[i];
+      }
+    
+    //SORTING:
+    for (int i = 0; i < size-1; i++){
+      for (int j = i+1; j < size; j++){ 
+        if (arr[i] < arr[j]){ 
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            swap++; //not counting corrctly
         }
       }
-      if (descend != i){
-        int temp = arr[i];
-            arr[i] = arr[descend];
-                arr[descend] = temp;
-                    descend++;
-      }
+    }
+
+    cout << "This is the sorted array in descending order: ";
+    //PRINTING SAVED ARRAY:
+    for(int i = 0; i < size; i++) {
       cout << arr[i] << " ";
     }
+
     cout << endl;
-        cout<< "The algorithm selected the maximum for the traverse of the array." << endl;
-            cout << "It took " << descend << " swaps to sort the array..."<<endl;;
+    cout<< "The algorithm selected the maximum for the traverse of the array." << endl;
+    cout << "It took " << swap << " swaps to sort the array..." << endl;
+
   }
   return 0;
 }
