@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 
   int size;
-  int swap = 0;
+  int swap, temp;
   int arr[10];
   cout << "Enter the size of the array: ";
   cin >> size;
@@ -20,10 +20,10 @@ int main(){
       }
     
     //SORTING:
-    for (int i = size; i > 0; --i){
-      for (int j = 0; j < size; j++){ 
-        if (arr[j] < arr[i]){ 
-            int temp = arr[i];
+    for (int i = 0; i < size-1; i++){
+      for (int j = i+1; j < size; j++){ 
+        if (arr[i] < arr[j]){ 
+            temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
             swap++;
